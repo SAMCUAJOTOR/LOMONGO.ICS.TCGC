@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="rfi.CSS"> 
+
+    <script>
+        function login()
+        {
+            var username = document.getElementById ("user").value;
+            var password = document.getElementById ("pass").value;
+            if(username =="kenneth" && password == "123")
+             {
+            window.location.href ="second FP.html";
+            alert("succesfully loged in");
+
+            }
+            else{
+                alert("incorrect to username or password");
+            }
+        }
+        function showpass(checkbox){
+            var checkbox = document.getElementById("check");
+            var password = document.getElementById("pass");
+            if(checkbox.checked == true){
+                password.setAttribute("type", "text");
+            }
+            else {
+                password.setAttribute("type","password");
+            }
+        }
+
+    </script>
+</head>
+
+         
+    
+           <div class="form">
+            <h2>Login</h2>
+            <input type="email" id="user" placeholder="Enter Email Here">
+            <input type="password" id="pass" placeholder="Enter Password Here">
+            <button class="btnn" onclick="login()">Login</button>
+
+            <p class="link">Don't have an account</br>
+            <a href="#">Sign up</a> here</a></p>
+            <p class="liw">Log in  with</p>
+           
+          
+           <div class="icon">
+           <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+           </div>
+           </div>
+           <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </body>
+</html>
